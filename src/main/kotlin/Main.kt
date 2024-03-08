@@ -3,6 +3,9 @@ concateString()
     multiplyNumber(5, 3)
     countWord("Wangesha")
 division(10, 2)
+    area(20)
+    circumference(40)
+    subjectMark(80,90,60,50,70)
 }
 fun concateString() {
     val str1="Hello"
@@ -28,4 +31,19 @@ fun division(x:Int, y:Int):Int{
     var division = (x/y)
     println(division)
     return(division)
+}
+fun area(radius:Int) {
+    var b = radius * radius
+    var result = 3.142 * b
+    println(result)
+}
+fun circumference(radius:Int){
+    var diameter = radius + radius
+    var circumference = 3.142*diameter
+    println (circumference)
+}
+fun subjectMark(kotlin:Int,design:Int,pm:Int,frontend:Int,das:Int){
+    var sum = kotlin+design+pm+frontend+das
+    var result = sum / 5
+    println (result)
 }
